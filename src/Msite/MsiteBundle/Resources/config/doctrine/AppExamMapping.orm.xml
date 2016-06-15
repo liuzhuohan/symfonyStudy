@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Msite\MsiteBundle\Entity\AppExamMapping" table="app_exam_mapping">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="examname" type="string" column="examName" length="20" nullable="true"/>
+    <field name="categoryid" type="integer" column="categoryId" nullable="true"/>
+    <field name="examid" type="integer" column="examId" nullable="true"/>
+    <field name="descrption" type="string" column="descrption" length="20" nullable="true"/>
+  </entity>
+</doctrine-mapping>
